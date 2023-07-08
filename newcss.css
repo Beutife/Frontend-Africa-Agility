@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&display=swap');
+
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.25rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: none;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  list-style: 1;
+  background-color: var(--mainWhite);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 1rem;
+  border: 1px;
+}
+.nav-logo {
+  margin-left: 50px;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--mainBlack);
+  opacity: 0.8;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+nav ul li a:hover {
+  color: var(--primaryColor);
+}
+nav .nav-icons {
+  margin-right: 15px;
+  margin: 10px;
+}
+
+nav .nav-icons a {
+  font-size: 1.35rem;
+  color: var(--primaryColor);
+}
+nav .nav-icons a:hover{
+  color: var(--primaryColor);
+  opacity: 0.5;
+}
+.bckg{
+  background: linear-gradient(rgba(63, 207, 212, 0.7), rgba(0, 0, 0, 0.7)), url("images/main.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+.bckg .img{
+  display: flex;
+  flex-direction: column;
+  padding: 20rem;
+  align-items: center;
+}
+.bckg .img .explore{
+  color: var(--mainWhite);
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+.bckg .img p{
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.bckg .img .tour a{
+  background-color: var(--mainWhite);
+  color: var(--primaryColor);
+  border: 2px solid white;
+  padding: 1rem 2.5rem;
+  margin-top: 15px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.bckg .img .tour a:hover{
+  background: transparent;
+  color: var(--mainWhite);
+  transition: 0.3s;
+}
+.about .us h2{
+  color: var(--mainBlack);
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+.about .us h2 span{
+  color: var(--primaryColor);
+}
+.abt-explore .abt-img{
+  height: 350px;
+  width: 550px;
+  border: 5px solid var(--primaryColor);
+  flex-basis: ;
+}
+
+.abt-explore{
+  display: flex;
+  flex: row;
+}
+.the-explore {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.the-explore .the{
+  word-spacing: 3px;
+  letter-spacing: 5px;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #020b1aef;
+  font-weight: 200;
+}
+.the-explore .para{
+  color: var(--primaryColor);
+  padding-top: 1rem;
+}
+.para .pa{
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+.the-explore .read a{
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+  padding: 0.5rem 0.5rem;
+  margin-top: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 100;
+  } 
+  .the-explore .read a:hover{
+    background-color: aquamarine;
+  color: rgba(7, 94, 94, 0.651);
+  border: 2px aquamarine;
+  transition: 0.3s;
+  }
+  .our-service{
+    background-color: var(--mainGrey);
+  }
+  .our-service .service{
+    color: var(--mainBlack);
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  }
+  .our-service .service span{
+    color: var(--primaryColor);
+  }
+  .service-icon{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .wallet{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+  .wallet .save{
+    display: flex;
+    flex-direction: row;
+  }
+  .save{
+    display: flex;
+    flex-direction: column;
+  }
+  .wallet i{
+    background-color: rgba(11, 146, 209, 0.979);
+    border: 1px;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0rem 0.5rem 0rem 2rem;
+    font-size: 2rem;
+  }
+  .wallet .save h6{
+   font-size: 0.8rem;
+   font-weight: 100;
+   word-spacing: 3px;
+   letter-spacing: 2px;
+   color: rgba(25, 0, 0, );
+   margin-bottom: 1rem;
+  }
+  .wallet .save p{
+    color: rgba(4, 16, 20, 0.979);
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+.wallet .end{
+  display: flex;
+  flex-direction: row;
+}
+  /*nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px;
+  padding: 5px;
+  line-height: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: var(--mainWhite);
+}
+
+.nav-logo {
+  margin-left: 50px;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  border: 3px;
+  padding: 5px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+
+a:hover {
+  color: var(--primaryColor);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 15px;
+  margin-right: 15px;
+}
+
+.nav-icons a {
+  font-size: 1.35rem;
+  color: var(--primaryColor);
+}
+
+.main {
+  background: linear-gradient(rgba(63, 207, 212, 0.7), rgba(0, 0, 0, 0.7)), url("images/main.jpeg");
+  padding: 15px;
+  margin: 70px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0px;
+}
+
+.main .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .content .explore {
+  color: var(--mainWhite);
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem;
+  padding: 20px 0px 0px 0px;
+}
+
+.main .content p {
+  color: var(--mainWhite);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  margin: 10px;
+}
+
+.main .content h3 a {
+  background-color: var(--mainWhite);
+  color: var(--primaryColor);
+  border: 2px solid white;
+  padding: 1rem 2.5rem;
+  margin-top: 15px;
+  letter-spacing: 5px;
+  justify-content: space-around;
+}
+
+.main h3 a:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: var(--mainWhite);
+  transition: 0.3s;
+}
+
+/*.about .h2 {
+  text-align: center;
+  justify-content: center;
+  margin: 8rem;
+}
+
+/*.about .about-img {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+
+}
+/*section{
+    text-align: center;
+    background:linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)) url("C:\Users\BEULAH CHIMA OBI\Downloads\Frontend Africa Agility\images\main.jpeg");
+    height: 100vh;
+    /*width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+
+}
+/*nav{
+    display: flex;
+    justify-content: space-between;
+    border: 5px;
+    padding: 3px;
+  }
+ul{
+  display: inline-block;
+  list-style: none;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+a{
+ text-decoration: none;
+ color: var(--mainBlack);
+ letter-spacing: var(--mainSpacing);
+}
+a:hover{}
+.nav-icons{
+    display: inline;
+} */
+/* header
